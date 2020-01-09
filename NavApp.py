@@ -128,4 +128,4 @@ print('Operations: ' + str(runs))                       #print uit door hoeveel 
 print('Path length: ' + str(len(path)) + "\n")          #print uit hoe lang het berekende pad
 print(grid.grid_str(path=path, start=start, end=end))   #print de kaart uit, met het start en eind punt, en het pad die het kortste is
 
-input("\nDruk op een knop om het programma af te sluiten")
+input("\nDruk op enter om het programma af te sluiten")
