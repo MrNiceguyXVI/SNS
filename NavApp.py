@@ -127,3 +127,5 @@ path, runs = finder.find_path(start,end,grid) #activeert het algoritme met de be
 print('Operations: ' + str(runs))                       #print uit door hoeveel iteraties het algoritme is gegaan
 print('Path length: ' + str(len(path)) + "\n")          #print uit hoe lang het berekende pad
 print(grid.grid_str(path=path, start=start, end=end))   #print de kaart uit, met het start en eind punt, en het pad die het kortste is
+
+input("\nDruk op een knop om het programma af te sluiten")
