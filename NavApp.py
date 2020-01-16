@@ -4,7 +4,7 @@ from pathfinding.core.grid import Grid
 from pathfinding.finder.a_star import AStarFinder
 #60 1
 #51 64
-#74 x 95// de Kaart die gebruikt word, de nummers
+#74 x 95// de Kaart die gebruikt word, de nummers AKA onze server side module
 #    0 1       5         10        15        20        25        30        35        40        45        50        55        60        65        70      74
 matrix = [                                                                                                                                                    #-1 voor allemaal
     [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1],  #1
@@ -120,7 +120,7 @@ XEndValue = input("Voer de x waarde in van het eindpunt, gescheden door een spat
 
 end = grid.node(int(XEndValue[0]),int(XEndValue[1]))
 
-#Finder functie berekent het pad (tussen haakjes staat aangegeven of diagonale beweging toegestaan zijn of niet)
+#geeft aan dat de finder niet diagonaal kan bewegen
 finder = AStarFinder(diagonal_movement=DiagonalMovement.always)
 path, runs = finder.find_path(start,end,grid) #activeert het algoritme met de benodigde gegevens: start node, end node, en de Grid
 
