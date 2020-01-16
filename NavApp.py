@@ -120,7 +120,7 @@ XEndValue = input("Voer de x waarde in van het eindpunt, gescheden door een spat
 
 end = grid.node(int(XEndValue[0]),int(XEndValue[1]))
 
-#geeft aan dat de finder niet diagonaal kan bewegen
+#Finder functie berekent het pad (tussen haakjes staat aangegeven of diagonale beweging toegestaan zijn of niet)
 finder = AStarFinder(diagonal_movement=DiagonalMovement.always)
 path, runs = finder.find_path(start,end,grid) #activeert het algoritme met de benodigde gegevens: start node, end node, en de Grid
 
